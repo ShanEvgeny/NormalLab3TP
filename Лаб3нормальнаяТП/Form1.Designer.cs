@@ -46,6 +46,7 @@
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(177, 27);
             textBox1.TabIndex = 0;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -54,6 +55,7 @@
             textBox2.ReadOnly = true;
             textBox2.Size = new Size(179, 27);
             textBox2.TabIndex = 1;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox3
             // 
@@ -61,6 +63,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(125, 27);
             textBox3.TabIndex = 2;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // comboBox1
             // 
@@ -71,6 +74,7 @@
             comboBox1.Size = new Size(70, 28);
             comboBox1.TabIndex = 3;
             comboBox1.Text = "+";
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // textBox4
             // 
@@ -78,6 +82,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(125, 27);
             textBox4.TabIndex = 4;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // textBox5
             // 
@@ -106,6 +111,7 @@
             comboBox2.Size = new Size(106, 28);
             comboBox2.TabIndex = 7;
             comboBox2.Text = "добавить";
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // comboBox3
             // 
@@ -116,6 +122,7 @@
             comboBox3.Size = new Size(104, 28);
             comboBox3.TabIndex = 8;
             comboBox3.Text = "добавить";
+            comboBox3.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
             // 
             // Form1
             // 

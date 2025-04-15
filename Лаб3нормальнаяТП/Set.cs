@@ -75,5 +75,13 @@ namespace Лаб3нормальнаяТП
             }
             return newSet;
         }
+        public Set AddNumber(int number)
+        {
+            return this + number;
+        }
+        public Set DeleteNumber(int number)
+        {
+            return this - number;
+        }
     }
 }
