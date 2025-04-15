@@ -13,10 +13,6 @@ namespace Лаб3нормальнаяТП
         {
             this.values = values;
         }
-        public List<int> GetValues()
-        {
-            return values;
-        }
         public override string ToString()
         {
             return String.Join(" ", this.values);

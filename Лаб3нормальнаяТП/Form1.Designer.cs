@@ -28,12 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            comboBox1 = new ComboBox();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            label1 = new Label();
+            comboBox2 = new ComboBox();
+            comboBox3 = new ComboBox();
+            SuspendLayout();
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(316, 63);
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(177, 27);
+            textBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(316, 174);
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(179, 27);
+            textBox2.TabIndex = 1;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(42, 63);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(125, 27);
+            textBox3.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "+", "-", "*" });
+            comboBox1.Location = new Point(371, 123);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(70, 28);
+            comboBox1.TabIndex = 3;
+            comboBox1.Text = "+";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(42, 174);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(125, 27);
+            textBox4.TabIndex = 4;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(141, 262);
+            textBox5.Name = "textBox5";
+            textBox5.ReadOnly = true;
+            textBox5.Size = new Size(354, 27);
+            textBox5.TabIndex = 5;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(43, 267);
+            label1.Name = "label1";
+            label1.Size = new Size(51, 20);
+            label1.TabIndex = 6;
+            label1.Text = "Ответ:";
+            label1.Click += label1_Click;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "добавить", "удалить" });
+            comboBox2.Location = new Point(195, 63);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(106, 28);
+            comboBox2.TabIndex = 7;
+            comboBox2.Text = "добавить";
+            // 
+            // comboBox3
+            // 
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "добавить", "удалить" });
+            comboBox3.Location = new Point(195, 173);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(104, 28);
+            comboBox3.TabIndex = 8;
+            comboBox3.Text = "добавить";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(517, 346);
+            Controls.Add(comboBox3);
+            Controls.Add(comboBox2);
+            Controls.Add(label1);
+            Controls.Add(textBox5);
+            Controls.Add(textBox4);
+            Controls.Add(comboBox1);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private ComboBox comboBox1;
+        private TextBox textBox4;
+        private TextBox textBox5;
+        private Label label1;
+        private ComboBox comboBox2;
+        private ComboBox comboBox3;
     }
 }
