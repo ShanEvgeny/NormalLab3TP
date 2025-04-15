@@ -71,21 +71,11 @@ namespace Лаб3нормальнаяТП
         }
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var number = Int32.Parse(textBox3.Text);
-            switch (comboBox2.Text)
-            {
-                case "добавить":
-                    set1 = set1.AddNumber(number);
-                    break;
-                case "удалить":
-                    set1 = set1.DeleteNumber(number);
-                    break;
-            }
-            textBox1.Text = set1.ToString();
+            Calculate();
         }
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var number = Int32.Parse(textBox4.Text);
+            /*var number = Int32.Parse(textBox4.Text);
             switch (comboBox3.Text)
             {
                 case "добавить":
@@ -95,7 +85,8 @@ namespace Лаб3нормальнаяТП
                     set2 = set2.DeleteNumber(number);
                     break;
             }
-            textBox2.Text = set1.ToString();
+            textBox2.Text = set1.ToString();*/
+            Calculate();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -119,6 +110,11 @@ namespace Лаб3нормальнаяТП
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Calculate();
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             Calculate();
         }
